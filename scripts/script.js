@@ -1,10 +1,10 @@
-top.onclick = function(event){
-    event.preventDefault();
+const knop = document.querySelector('button[id*="top"]')
+knop.addEventListener("click", function(event){
     document.body.scrollIntoView({
         behavior: "smooth",
         block: "start"
     })
-}
+})
 
 
 const scrolBtn = document.querySelector('.is-show')
